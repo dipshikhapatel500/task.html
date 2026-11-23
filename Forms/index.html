@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Forms & Interactive Inputs &nbsp;&nbsp; 
+        <small>Learn HTML by Practising</small>&nbsp;&nbsp; 
+        <input type="search" placeholder="search tab">&nbsp;&nbsp;
+        </h1>
+    <nav>
+        <a href="/Home/index.html">Home</a>&nbsp;&nbsp; 
+        <a href="/Tag/index.html">Tags & Text</a>&nbsp;&nbsp; 
+        <a href="/Lists/index.html">Lists</a>&nbsp;&nbsp; 
+        <a href="/Tables/index.html">Tables</a>&nbsp;&nbsp; 
+        <a href="/Forms/index.html">22 Forms</a>&nbsp;&nbsp; 
+        <a href="/Images/index.html">Images & Media</a>&nbsp;&nbsp; 
+        <a href="/Blog/index.html">Semantic & Blog</a>&nbsp;&nbsp; 
+        <a href="/Teachers/index.html">Teachers & Rubric</a>&nbsp;&nbsp; 
+    </nav>   
+    </header><br><br>
+    <form action="" methods="Get">
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required pattern="[A-Za-z] {3,40}" ><br><br>
+        <label>Email</label>
+        <input type="email" placeholder="name@ex.com" name=""  autocomplete="email" required  ><br><br>
+        <label>Password</label>
+        <input type="password"  required name="" ><br><br>
+        <label>Gender</label>
+        <input type="radio"  name="gender" id="male" >
+        <label for="male">Male</label>
+        <input type="radio"  name="gender" id="female" >
+        <label for="female">Female</label>
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label for="phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="10 digit number"pattern="[0-9]{10}" required><br><br>
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city" list="cityList" placeholder="Choose or type..." required>
+        <datalist id="cityList">
+            <option value="patna">
+            <option value="delhi">
+            <option value="noida">
+            <option value="bangalore">
+        </datalist>
+        </fieldset>
+        <br>
+
+    <br>
+
+    <fieldset>
+        <legend>Academic & Profile Information</legend>
+
+        <label for="course">Course Track </label><br>
+
+        <select id="course" name="course" required>
+            <option value="">Select Course...</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+        </select>
+        <br><br>
+
+        <label>Hobbies & Interests</label><br>
+
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading Tech Manuals</label>
+
+        <input type="checkbox" id="music" name="hobbies" value="Music">
+        <label for="music">Music Production</label>
+        <br>
+
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports & Athletics</label>
+
+        <input type="checkbox" id="coding" name="hobbies" value="Coding">
+        <label for="coding">Open Source Coding</label>
+        <br><br>
+
+        <label for="skill">Skill Level Assessment</label><br>
+
+        <input type="range" id="skill" name="skill" min="0" max="100" value="75">
+        <br>
+
+        <label for="photo">Upload Photo</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <br><br>
+
+        <label for="resume">Resume PDF</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,application/pdf">
+        <br><br>
+
+        <label for="address">Address & Dispatch Instructions</label><br>
+
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter student residential  address..."></textarea>
+
+    </fieldset><br>
+    <button type="submit">Register Student</button>
+    <button type="reset">Reset Form</button>
+    <button type="button">Populate Demo Data</button>
+    <input type="image" src="submit.png" alt="Submit via Graphic Stamp" width="100">
+    </form>
+    </body>
+    </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Accessible Tables with Colspan & Rowspan&nbsp;&nbsp; 
+        <small>Learn HTML by Practising</small>&nbsp;&nbsp; 
+        <input type="search" placeholder="search tab">&nbsp;&nbsp;
+        </h1>
+    <nav>
+        <a href="/Home/index.html">Home</a>&nbsp;&nbsp; 
+        <a href="/Tag/index.html">Tags & Text</a>&nbsp;&nbsp; 
+        <a href="/Lists/index.html">Lists</a>&nbsp;&nbsp; 
+        <a href="/Tables/index.html">Tables</a>&nbsp;&nbsp; 
+        <a href="/Forms/index.html">22 Forms</a>&nbsp;&nbsp; 
+        <a href="/Images/index.html">Images & Media</a>&nbsp;&nbsp; 
+        <a href="/Blog/index.html">Semantic & Blog</a>&nbsp;&nbsp; 
+        <a href="/Teachers/index.html">Teachers & Rubric</a>&nbsp;&nbsp; 
+    </nav>   
+    </header><br><br>
+    <table border="1">
+        <caption>Student Marksheet</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">S.No</th>
+                <th rowspan="2">Student Name</th>
+                <th colspan="4">Marks Obtain (Total 300)</th>
+                <th rowspan="2">Result</th>
+            </tr>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JS</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+               <tr>
+                    <td>1</td>
+                    <td>Rahul</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>88</td>
+                    <td>263</td>
+                    <td>pass</td>
+
+                </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>Priya</td>
+                    <td>78</td>
+                    <td>82</td>
+                    <td>80</td>
+                    <td>240</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Amit</td>
+                    <td>92</td>
+                    <td>95</td>
+                    <td>91</td>
+                    <td>278</td>
+                    <td>Pass</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr >
+                <th colspan="2">Total (colspan="2")</th>
+                <td>255</td>
+                <td>267</td>
+                <td>259</td>
+                <td>781</td>
+                <td>-</td>
+
+            </tr>
+        </tfoot>
+    </table>
+    </body>
+    </html>
